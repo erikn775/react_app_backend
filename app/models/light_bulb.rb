@@ -1,0 +1,2 @@
+class LightBulb < ApplicationRecord
+end
