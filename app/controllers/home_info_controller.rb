@@ -1,0 +1,2 @@
+class HomeInfoController < ApplicationController
+end
