@@ -20,3 +20,4 @@ Heater.create(heaterType: "heat pump", cost: 5600, savings: 3600)
 Heater.create(heaterType: "high efficency furnace", cost: 5000, savings: 1800)
 
 LightBulb.create(lightType: "led", cost: 150, savings: 1000)
+
