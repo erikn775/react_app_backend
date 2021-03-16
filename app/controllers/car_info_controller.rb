@@ -1,6 +1,12 @@
 class CarInfoController < ApplicationController
 
+    def index
+        car_infos = CarInfo.all
+        render json: car_infos
+    end
+
     def create
+        byebug
         car_info = CarInfo.new(car_params)
         if car_info.save
             render json: car_info
@@ -10,6 +16,6 @@ class CarInfoController < ApplicationController
     private
 
     def car_params
-        params.require(:car_info).permit(:name, :email, :ownACar, :mpg, :type, :chargeAtHome)
+        params.require(:car_info).permit(:name, :email, :ownACar, :mpg, :typeOfCar, :chargeAtHome)
     end
 end
