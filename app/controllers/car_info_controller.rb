@@ -13,6 +13,11 @@ class CarInfoController < ApplicationController
         end
     end
 
+    def show
+        car_info = CarInfo.find_by(id: params[:id])
+        render json: car_info
+    end
+    
     private
 
     def car_params
