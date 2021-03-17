@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_16_021227) do
+ActiveRecord::Schema.define(version: 2021_03_17_030929) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -90,6 +90,14 @@ ActiveRecord::Schema.define(version: 2021_03_16_021227) do
   create_table "water_heaters", force: :cascade do |t|
     t.string "heaterType"
     t.string "size"
+    t.integer "cost"
+    t.integer "savings"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "windows", force: :cascade do |t|
+    t.string "windowType"
     t.integer "cost"
     t.integer "savings"
     t.datetime "created_at", precision: 6, null: false
