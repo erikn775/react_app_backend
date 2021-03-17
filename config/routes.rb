@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   resources :solar, only: [:index, :show]
   resources :light_bulb, only: [:index]
   resources :heater, only: [:index, :show]
-  resources :water_heater, only: [:index]
+  resources :water_heater, only: [:index, :show]
   resources :appliance, only: [:index]
   resources :light_bulb, only: [:index]
   

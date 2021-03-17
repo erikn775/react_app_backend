@@ -6,7 +6,6 @@ class CarInfoController < ApplicationController
     end
 
     def create
-        byebug
         car_info = CarInfo.new(car_params)
         if car_info.save
             render json: car_info
@@ -17,7 +16,7 @@ class CarInfoController < ApplicationController
         car_info = CarInfo.find_by(id: params[:id])
         render json: car_info
     end
-    
+
     private
 
     def car_params
