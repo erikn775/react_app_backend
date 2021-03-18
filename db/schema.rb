@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_17_030929) do
+ActiveRecord::Schema.define(version: 2021_03_18_161713) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -59,6 +59,14 @@ ActiveRecord::Schema.define(version: 2021_03_17_030929) do
 
   create_table "light_bulbs", force: :cascade do |t|
     t.string "lightType"
+    t.integer "cost"
+    t.integer "savings"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "lowflows", force: :cascade do |t|
+    t.string "faucetType"
     t.integer "cost"
     t.integer "savings"
     t.datetime "created_at", precision: 6, null: false

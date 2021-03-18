@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :lowflows
   resources :windows
   resources :tips
   resources :reviews
@@ -9,7 +10,7 @@ Rails.application.routes.draw do
   resources :light_bulb, only: [:index, :show]
   resources :heater, only: [:index, :show]
   resources :water_heater, only: [:index, :show]
-  resources :appliance, only: [:index, :show]
+  resources :appliance, only: [:show]
   
   
 end

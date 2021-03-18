@@ -1,0 +1,2 @@
+class Lowflow < ApplicationRecord
+end

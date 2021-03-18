@@ -1,6 +1,6 @@
 class ApplianceController < ApplicationController
-    def index
-        appliances = Appliance.all
+    def show
+        appliances = Appliance.find_by(id: params[:id])
         render json: appliances
     end
 end
