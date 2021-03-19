@@ -8,6 +8,6 @@ React front end Github: https://github.com/erikn775/ecohelper
 
 ruby 2.6.1
 
-##Run Api
+## Run Api
 
 To run this Api run bundle install then start the Rails server with rails s
